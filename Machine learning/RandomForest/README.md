@@ -10,7 +10,7 @@
 
 ---
 
-本文数据来自**UCI**的**Cardiotocography Data Set**（[点击下载](https://github.com/lixiang117423/R/blob/master/Machine learning/Random-forest/CTG.csv))。一共有2126个观测值，22个观测变量，其中最后一个变量**NSP**作为目标变量。
+本文数据来自**UCI**的**Cardiotocography Data Set**（[点击下载](https://github.com/lixiang117423/R/blob/master/Machine learning/RandomForest/CTG.csv))。一共有2126个观测值，22个观测变量，其中最后一个变量**NSP**作为目标变量。
 
 ---
 
@@ -170,7 +170,7 @@
    plot(rf)
    ```
 
-   ![随机森林模型错误率](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Random-forest/figures/1.png)
+   ![随机森林模型错误率](https://github.com/lixiang117423/R/raw/master/Machine%20learning/RandomForest/figures/1.png)
 
    从图上可以看出，“trees”在300以后，“Error”基本就是稳定的了，所以选择**ntree = 300**是OK的。
 
@@ -186,13 +186,13 @@
           improve = 0.05)
    ```
 
-   ![mtry参数确定](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Random-forest/figures/6.png)
+   ![mtry参数确定](https://github.com/lixiang117423/R/raw/master/Machine%20learning/RandomForest/figures/6.png)
 
    选择图中位置最低点**8**作为**mtry**参数。
 
 8. 直方图展示树的节点数
 
-   ![树的节点数](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Random-forest/figures/2.png)
+   ![树的节点数](https://github.com/lixiang117423/R/raw/master/Machine%20learning/RandomForest/figures/2.png)
 
    这个一般只要前面的**mtree**和**mtry**没问题，就没问题。
 
@@ -206,7 +206,7 @@
               main = "Top 10 - Variable Importance")
    ```
 
-   ![变量重要性](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Random-forest/figures/3.png)
+   ![变量重要性](https://github.com/lixiang117423/R/raw/master/Machine%20learning/RandomForest/figures/3.png)
 
    越往上的变量贡献越大。
    还可以用别的方式查看变量的重要性：
@@ -223,7 +223,7 @@
     partialPlot(rf, train, ASTV, "2")
     ```
 
-    ![变量局部重要性](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Random-forest/figures/4.png)
+    ![变量局部重要性](https://github.com/lixiang117423/R/raw/master/Machine%20learning/RandomForest/figures/4.png)
 
 11. 从模型中提取树
 
@@ -237,7 +237,7 @@
     MDSplot(rf, train$NSP)
     ```
 
-    ![多维标度图](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Random-forest/figures/5.png)
+    ![多维标度图](https://github.com/lixiang117423/R/raw/master/Machine%20learning/RandomForest/figures/5.png)
 
 ---
 

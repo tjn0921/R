@@ -1,10 +1,10 @@
 **决策树**（Decision tree）理解成通过一系列的条件判断下一步应该是什么，得到什么样的结果。就像下面这个图：
 
-![决策树例子](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Decision-tree/figures/2.png)
+![决策树例子](https://github.com/lixiang117423/R/raw/master/Machine%20learning/DecisionTree/figures/2.png)
 
 ---
 
-本文示例数据来自UCL机器学习中心。下载地址：https://github.com/lixiang117423/R/blob/master/Machine%20learning/Decision-tree/Cardiotocographic.csv
+本文示例数据来自UCL机器学习中心。下载地址：https://github.com/lixiang117423/R/blob/master/Machine%20learning/DecisionTree/Cardiotocographic.csv
 
 ---
 
@@ -38,7 +38,7 @@ tree = ctree(NSPF~LB+AC+FM, # 选择其中几个变量进行建树
 plot(tree)
 ```
 
-![决策树](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Decision-tree/figures/3.png)
+![决策树](https://github.com/lixiang117423/R/raw/master/Machine%20learning/DecisionTree/figures/3.png)
 
 从图上看出，决策树从**AC**这个变量开始，依次判断，到最后就看哪个柱子高就是哪个了。
 
@@ -109,7 +109,7 @@ library(rpart.plot)
 rpart.plot(tree1,type = 0)
 ```
 
-![其他可视化方法](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Decision-tree/figures/4.png)
+![其他可视化方法](https://github.com/lixiang117423/R/raw/master/Machine%20learning/DecisionTree/figures/4.png)
 
 ---
 
