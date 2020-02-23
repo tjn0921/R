@@ -1,4 +1,4 @@
-**决策树（Decision tree）**理解成通过一系列的条件判断下一步应该是什么，得到什么样的结果。就像下面这个图：
+**决策树**（Decision tree）理解成通过一系列的条件判断下一步应该是什么，得到什么样的结果。就像下面这个图：
 
 ![决策树例子](https://github.com/lixiang117423/R/raw/master/Machine%20learning/Decision-tree/figures/2.png)
 
