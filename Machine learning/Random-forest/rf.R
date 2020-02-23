@@ -1,5 +1,5 @@
-# Read Data
-data <- read.csv("~/Desktop/CTG.csv", header = TRUE)
+# Load data
+data <- read.csv("CTG.csv", header = TRUE)
 str(data)
 data$NSP <- as.factor(data$NSP)
 table(data$NSP)
@@ -58,7 +58,7 @@ varUsed(rf)
 partialPlot(rf, train, ASTV, "2")
 
 # Extract Single Tree
-getTree(rf, 1, labelVar = TRUE)
+ll = getTree(rf, 1, labelVar = TRUE)
 
 # Multi-dimensional Scaling Plot of Proximity Matrix
 MDSplot(rf, train$NSP)
