@@ -4,7 +4,7 @@
 
 ---
 
-**本教程使用GRE、GPA和RANK三个变量使用逻辑回归预测学生的申请是否被批准。**数据下载地址：https://github.com/lixiang117423/R/blob/master/MachineLearning/LogisticRegression/binary.csv。
+本教程使用GRE、GPA和RANK三个变量使用逻辑回归预测学生的申请是否被批准。数据下载地址：https://github.com/lixiang117423/R/blob/master/MachineLearning/LogisticRegression/binary.csv。
 
 ----
 
