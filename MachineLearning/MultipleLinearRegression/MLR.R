@@ -1,8 +1,6 @@
 rm(list = ls())
 
 data = read.csv('vehicle.csv')
-head(data)
-pairs(data[3:5])
 
 # multiple linear regression
 res = lm(lc ~ Mileage + lh, data = data)
